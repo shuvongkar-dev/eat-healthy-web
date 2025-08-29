@@ -4,9 +4,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 /* shared styles */
+
+.display-flex {
+    display: flex;
+}
 
 .btn-primary {
     background: linear-gradient(90deg,#FBA24F 0%, #FD5B35 53%, #FF1E1E 100%);
@@ -17,5 +22,113 @@
     color: white;
     font-size: 1.125rem;
     font-weight: 500;
+    cursor: pointer;
+
     
+}
+
+.primary-text {
+    color: #FBA24F;
+}
+
+/* hero section styles */
+
+.hero-section {
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.hero-title{
+    font-size: 3.75rem;
+    color: #575757;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.hero-description{
+    font-size: 1.25rem;
+    color: #828282;
+    margin-bottom: 50px;
+}
+
+.hero-image{
+    background-image: url(/images/shapes/Group\ 8447.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -30px;
+}
+
+.hero-image >img {
+    margin-bottom: -30px;
+
+}
+
+/* main about section styles */
+
+.about-section{
+    background-image: url(/images/shapes/Frame\ 58.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-section-content{
+    max-width: 540px;
+}
+
+.about-title{
+    font-size:2.5rem ;
+    color: #707070;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.about-description{
+    font-size: 1.125rem;
+    margin-bottom: 90px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero-image > img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .about-section{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .about-section-content{
+        margin-top: 50px;
+    }
+    .about-section{
+        background-size: cover;
+    }
 }
